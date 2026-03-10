@@ -178,6 +178,7 @@ header {
 .galeria {
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   width: 90vw;
   align-items: center;
