@@ -124,17 +124,57 @@ header {
 }
 /* CTA */
 
-.CTA {
-  padding: 120px 20px;
+.CTA{
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.cta-container{
+  width: 90%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  align-items: center;
 }
 
-.cta-card {
-  width: 320px;
-  border-radius: 20px;
+.cta-card{
+  display: flex;
+  justify-content: center;
+}
+
+.cta-acordeon {
+  width: 100%;
+}
+.accordion {
+  border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  background: white;
+}
+.accordion-item{
   border: none;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease;
+  border-bottom: 1px solid #e5e5e5;
+}
+.accordion-item:last-child{
+  border-bottom: none;
+}
+.accordion-button{
+  background: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--primario);
+  padding: 18px;
+  transition: all .3s ease;
+}
+.accordion-button:hover{
+  background: #f7f7f7;
+}
+.accordion-button:not(.collapsed){
+  background: var(--primario);
+  color: white;
+  box-shadow: none;
 }
 
 .cta-card:hover {
@@ -175,6 +215,16 @@ header {
 .btn-cta:hover {
   background: #000;
   transform: scale(1.05);
+}
+.accordion-button:focus{
+  box-shadow: none;
+  border-color: transparent;
+}
+.accordion-body{
+  background: #fafafa;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
 }
 /* products */
 .galeria {
@@ -395,4 +445,8 @@ header {
   .footer-container{
     grid-template-columns: repeat(3,1fr);
   }
+  .cta-container{
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
 }
