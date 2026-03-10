@@ -49,17 +49,18 @@ header {
   backdrop-filter: blur(8px);
 }
 .logo {
+  margin-top: 1rem;
   width: 150px;
   border-radius: 1.2rem;
-  box-shadow: 1px 13px 72px 15px rgba(0,0,0,0.38);
+  /* box-shadow: 1px 13px 72px 15px rgb(12, 2, 2);
 -webkit-box-shadow: 1px 13px 72px 15px rgba(0,0,0,0.38);
--moz-box-shadow: 1px 13px 72px 15px rgba(0,0,0,0.38);
+-moz-box-shadow: 1px 13px 72px 15px rgba(0,0,0,0.38); */
 }
-.logo:hover { 
+/* .logo:hover { 
  box-shadow: 1px 13px 72px 15px rgba(15,3,3,0.82);
 -webkit-box-shadow: 1px 13px 72px 15px rgba(15,3,3,0.82);
 -moz-box-shadow: 1px 13px 72px 15px rgba(15,3,3,0.82);
-}
+} */
 .menu ul {
   display: flex;
   flex-direction: column;
