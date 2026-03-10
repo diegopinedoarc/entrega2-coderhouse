@@ -287,6 +287,56 @@ header {
 .btn-whatsapp:hover{
   background: #1ebe5d;
 }
+/*footer*/
+
+.footer{
+  background: var(--primario);
+  color: white;
+  padding-top: 50px;
+}
+
+.footer-container{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+
+.footer h3,
+.footer h4{
+  margin-bottom: 10px;
+}
+
+.footer p{
+  color: #ccc;
+}
+
+.footer ul{
+  padding: 0;
+}
+
+.footer li{
+  margin-bottom: 8px;
+}
+
+.footer a{
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.footer a:hover{
+  color: white;
+}
+
+.footer-copy{
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.9rem;
+  color: #aaa;
+}
 /* tablet */
 @media (min-width: 600px) {
   .container-galeria {
@@ -341,5 +391,8 @@ header {
   .container-galeria {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+  }
+  .footer-container{
+    grid-template-columns: repeat(3,1fr);
   }
 }
