@@ -45,12 +45,20 @@ header {
   width: 100%;
   font-weight: 400;
   z-index: 1000;
-  background: rgba(255,255,255,0.9);
+  background: url(../assets/img/gray-wall-texture.jpg);
   backdrop-filter: blur(8px);
 }
 .logo {
   width: 150px;
-  border-radius: 50%;
+  border-radius: 1.2rem;
+  box-shadow: 1px 13px 72px 15px rgba(0,0,0,0.38);
+-webkit-box-shadow: 1px 13px 72px 15px rgba(0,0,0,0.38);
+-moz-box-shadow: 1px 13px 72px 15px rgba(0,0,0,0.38);
+}
+.logo:hover { 
+ box-shadow: 1px 13px 72px 15px rgba(15,3,3,0.82);
+-webkit-box-shadow: 1px 13px 72px 15px rgba(15,3,3,0.82);
+-moz-box-shadow: 1px 13px 72px 15px rgba(15,3,3,0.82);
 }
 .menu ul {
   display: flex;
@@ -80,6 +88,7 @@ header {
 }
 .navbar-link:hover {
   cursor: pointer;
+  text-shadow: 4px 6px 19px rgba(144,32,32,0.69);
 }
 .bars-menu {
   display: flex;
