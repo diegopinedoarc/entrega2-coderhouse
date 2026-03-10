@@ -188,12 +188,20 @@ header {
 }
 .container-galeria {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  grid-template-columns: 1fr; /* mobile */
+  gap: 20px;
   padding: 1rem;
-        
+  width: 100%;
 }
-
+.card{
+  width: 100%;
+}
+/* tablet */
+@media (min-width: 600px) {
+  .container-galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 /* Version desktop */
 @media (min-width: 940px) {
   header {
@@ -234,5 +242,9 @@ header {
   color: var(--primario);
   font-weight: 300;
   font-size: 1.4rem;
+  }
+  .container-galeria {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
   }
 }
