@@ -39,13 +39,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 50px;
+  padding: 50px 100px;
   box-shadow: 0 8px 50px rgba(3, 3, 2, 0.849);
   position: fixed;
   width: 100%;
   font-weight: 400;
   z-index: 1000;
-  background: url(../assets/img/gray-wall-texture.jpg);
+  background: url(../assets/img/background.png);
   backdrop-filter: blur(8px);
 }
 .logo {
@@ -419,6 +419,7 @@ header {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   width: 100%;
   z-index: 1000;
+  
   }
   /* Navbar desktop */
   .menu {
